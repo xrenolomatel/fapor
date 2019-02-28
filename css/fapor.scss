@@ -1,0 +1,151 @@
+$color-white: white;
+$color-header: #24282f;
+$color-a: #dedede;
+$color-p: #b5a263;
+
+
+
+
+*{
+  max-width: 1147px;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+// 1 line//
+
+.container {
+  background-color: $color-header;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+
+
+  .logo{
+    padding-top:45px;
+}
+  .menu {
+
+    //&:after{
+    //  display: block;
+    //  content: "";
+    //  margin: 15px auto auto;
+    //  background-color:#b5a263;
+    //  height: 2px;
+    //  width: 50px;
+    //}
+    ul {
+      margin: 0;
+      padding: 45px 10px 0;
+      list-style: none;
+    }
+    li{
+      color: $color-white;
+      display: inline-block;
+      margin-left: 10px;
+      padding: 0 20px 45px;
+      border-bottom: 1px solid transparent;
+      a{
+        text-transform: uppercase;
+        color: $color-white;
+        text-decoration: none;
+        display: inline-block;
+        //font: 400 14px Arial Helvetica sans-serif;
+
+      }
+      &:hover{
+        border-bottom: 1px solid yellow;
+      }
+    }
+  }
+}
+
+
+// 2 line //
+
+
+
+
+.container_2{
+  background-color: $color-header;
+  max-width: 1147px;
+  position: relative;
+  width: 100%;
+  img{
+    background-color: $color-header;
+    width: 100%;
+  }
+.fon{
+  position: absolute;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+.text_in_nav{
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  color: red;
+  margin-bottom: 108px;
+
+}
+
+}
+
+
+
+//section//
+
+.h1 {
+  margin-top: 400px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  h1 {
+    color: #24282f;
+    padding: 50px 50px 32px;
+
+
+    &:hover {
+      border: 1px solid yellow;
+
+
+    }
+
+  }
+  //hr{
+  //  width: 50px;
+  //  color: red;
+  //  align: center;
+  //}
+}
+
+
+
+.photo_1{
+  width: 312px;
+  height: 370px;
+  .icons {
+    padding-top: 30px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    p{
+      color: $color-p;
+    }
+
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: $color-a;
+      border-radius: 50%;
+    }
+
+  }
+}
+
+
