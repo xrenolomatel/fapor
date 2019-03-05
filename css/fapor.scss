@@ -6,6 +6,9 @@ $color-p: #b5a263;
 
 
 
+
+
+
 *{
   max-width: 1147px;
   padding: 0;
@@ -29,15 +32,6 @@ $color-p: #b5a263;
     padding-top:45px;
 }
   .menu {
-
-    //&:after{
-    //  display: block;
-    //  content: "";
-    //  margin: 15px auto auto;
-    //  background-color:#b5a263;
-    //  height: 2px;
-    //  width: 50px;
-    //}
     ul {
       margin: 0;
       padding: 45px 10px 0;
@@ -76,6 +70,7 @@ $color-p: #b5a263;
   position: relative;
   width: 100%;
   img{
+    max-width: 1147px;
     background-color: $color-header;
     width: 100%;
   }
@@ -88,7 +83,7 @@ $color-p: #b5a263;
   position: absolute;
   top: 90px;
   left: 100px;
-  color: red;
+  color: $color-white;
   margin-bottom: 108px;
 
 }
@@ -100,7 +95,7 @@ $color-p: #b5a263;
 //section//
 
 .h1 {
-  margin-top: 400px;
+  margin-top: 220px;
   text-align: center;
   margin-bottom: 30px;
 
@@ -109,18 +104,12 @@ $color-p: #b5a263;
     padding: 50px 50px 32px;
 
 
-    &:hover {
-      border: 1px solid yellow;
-
-
-    }
+    //&:hover {
+    //  border: 1px solid yellow;
+    //}
 
   }
-  //hr{
-  //  width: 50px;
-  //  color: red;
-  //  align: center;
-  //}
+
 }
 
 
@@ -136,6 +125,13 @@ $color-p: #b5a263;
     p{
       color: $color-p;
     }
+    .fab{
+      color: white;
+      padding: 10px;
+    }
+    .fa-facebook-f{
+      padding-left: 15px;
+    }
 
     a {
       display: inline-block;
@@ -143,9 +139,42 @@ $color-p: #b5a263;
       height: 40px;
       background-color: $color-a;
       border-radius: 50%;
+
+      &:hover{
+        background-color: red;
+      }
     }
 
   }
+}
+
+
+.central_content_1{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+.button{
+  background-color: $color-white;
+  margin: 45px auto;
+  text-align: center;
+  width: 160px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 30%;
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+
+  }
+ p{
+   padding: 18px 40px;
+   size: 15px;
+ }
+
 }
 
 
